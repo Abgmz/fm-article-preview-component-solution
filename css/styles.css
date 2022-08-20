@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+/* Colors */
+/* Typography */
+/* Screen sizes */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+button {
+  all: unset;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  height: 100vh;
+  background-color: hsl(210deg, 46%, 95%);
+  font-size: 13px;
+}
+
+.article-preview__share-btn.active-btn {
+  background-color: hsl(214deg, 17%, 51%);
+}
+.article-preview__share-btn.active-btn .article-preview__share-img {
+  filter: brightness(10);
+}
+@media (min-width: 860px) {
+  .article-preview__share-btn.active-btn {
+    display: none;
+  }
+}
+
+.article-preview {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px -25px rgba(109, 127, 151, 0.5);
+  display: grid;
+  grid-template-columns: 100%;
+  width: 90%;
+  max-width: 320px;
+  min-width: 300px;
+  overflow: hidden;
+}
+.article-preview__header {
+  height: 214px;
+  overflow: hidden;
+}
+@media (min-width: 860px) {
+  .article-preview__header {
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+}
+@media (min-width: 860px) {
+  .article-preview__header-img {
+    transform: scale(1.5);
+    position: relative;
+    right: -63px;
+    top: 35px;
+  }
+}
+.article-preview__content {
+  padding: 2.2rem 2rem 1.2rem;
+  position: relative;
+}
+.article-preview__title {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+@media (min-width: 860px) {
+  .article-preview__title {
+    font-size: 1.2rem;
+  }
+}
+.article-preview__title, .article-preview__user-name {
+  color: hsl(217deg, 19%, 35%);
+}
+.article-preview__description {
+  margin-bottom: 1.8rem;
+  line-height: 1.6;
+}
+.article-preview__description, .article-preview__user-date {
+  color: hsl(214deg, 17%, 51%);
+}
+.article-preview__user {
+  display: grid;
+  grid-template-columns: 2.6rem 1fr 2rem;
+  align-items: center;
+  column-gap: 1rem;
+}
+.article-preview__user-avatar {
+  border-radius: 50%;
+}
+.article-preview__user-name {
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 0.16rem;
+}
+.article-preview__user-date {
+  color: hsl(212deg, 23%, 69%);
+}
+.article-preview__share-btn {
+  display: inline-flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: hsl(210deg, 46%, 95%);
+  transition: all 0.2s ease;
+}
+.article-preview__share-btn:hover {
+  background-color: hsl(214deg, 17%, 51%);
+}
+.article-preview__share-btn:hover .article-preview__share-img {
+  filter: brightness(10);
+}
+.article-preview__share-box {
+  background-color: hsl(217deg, 19%, 35%);
+  position: absolute;
+  padding: 0 2rem;
+  width: 100%;
+  height: 5rem;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+@media (min-width: 860px) {
+  .article-preview__share-box {
+    width: max-content;
+    border-radius: 8px;
+    height: 3.5rem;
+    bottom: 91px;
+    left: 240px;
+    padding: 0 1.4rem;
+  }
+}
+@media (min-width: 860px) {
+  .article-preview__share-box::after {
+    content: "";
+    background-color: hsl(217deg, 19%, 35%);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 45%;
+    top: 55px;
+    clip-path: polygon(95% 0, 5% 0, 50% 55%);
+  }
+}
+.article-preview__share-box.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.article-preview__share-socials {
+  height: inherit;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  align-items: center;
+  column-gap: 1rem;
+}
+.article-preview__share-name {
+  text-transform: uppercase;
+  color: hsl(214deg, 17%, 51%);
+  letter-spacing: 0.3rem;
+}
+.article-preview__share-links {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+@media (min-width: 860px) {
+  .article-preview {
+    grid-template-columns: 2fr 3fr;
+    max-width: 680px;
+    overflow: visible;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

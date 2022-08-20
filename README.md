@@ -6,7 +6,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL:
+- Solution URL: <a href="" target="_blank">https://github.com/Abgmz/fm-article-preview-component-solution</a>
 - Live Site URL:
 
 ### Built with
